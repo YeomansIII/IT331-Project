@@ -1,0 +1,59 @@
+/* navbar styles */
+.navbar-cyan {
+    background-color: #00BCD4;
+    color: rgba(0, 0, 0, 0.87);
+}
+.navbar-cyan a {
+    color: rgba(0, 0, 0, 0.87);
+}
+.navbar-cyan li a:hover {
+    background-color: #0097A7;
+    color: white;
+}
+.navbar-cyan .navbar-toggle {
+    border-color: #0097A7;
+}
+.navbar-cyan .navbar-toggle:hover {
+    background-color: #0097A7;
+}
+.navbar-cyan .navbar-toggle .icon-bar {
+    background-color: rgba(0, 0, 0, 0.87);
+}
+.progress-bar {
+    background-color: #006064;
+}
+.progress.project {
+    margin: -20px -15px 0;
+    border-radius: 0;
+}
+/* common classes */
+.row.flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+.flex.vertical.center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+.fit-image {
+    width: 100%;
+    height: auto;
+}
+img.pad {
+    padding: 2em;
+}
+.image-caption-group {
+    padding: 2em;
+}
+.image-caption-group p {
+    color: #999;
+    padding: 0.5em 0;
+}
+ul.square {
+    list-style: square;
+}
