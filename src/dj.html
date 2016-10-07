@@ -3,6 +3,7 @@
 <head>
     <title>Echelon: DJ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
@@ -12,7 +13,7 @@ include "includes/navbar.html"
 <div class="container">
     <div class="page-header row flex">
         <div class="col-md-1 flex vertical center">
-            <img class="fit-image" src="assets/images/ic_launcher.png"/>
+            <img class="fit-image" src="assets/images/ic_launcher.png" alt="echelon logo"/>
         </div>
         <div class="col-md-11">
             <h1>Echelon: DJ</h1>
@@ -28,28 +29,30 @@ include "includes/navbar.html"
     <div class="row">
         <div class="col-md-8 col-sm-12">
             <h2>Purpose</h2>
-            <p>The Jukebox is Echelon's primary feature. The initial idea for the app was to create a way for groups of
-                friends or venues to let everyone queue up music on one device.</p>
-            <p>When songs are in the queue, listeners can can upvote songs they want to listen to, bringing those songs
-                to the top of the queue. The songs closer to the top of the queue will be played sooner than those on
-                the bottom, as the player plays songs from the top of the queue.</p>
+            <p>The DJ mode is currently a secondary feature. It's purpose is to allow a limited number of users add
+                songs to the queue, however, everyone in the group will be able to listen to the music.</p>
+            <p>This feature is similar to the now defunct website "Turntable.fm". This website offered similar
+                functionality.</p>
             <h2>Progress</h2>
-            <p>The Jukebox is the only mode being actively worked on at the moment, as it is the primary feature of the
-                app. The Jukebox is functional and users can join the group, add songs, vote, and the leader can play
-                the queue. The functionality and design of the Jukebox is currently being refined and prepped for the
-                public beta release.</p>
-            <p>To try out the Jukebox now in the current closed Alpha, you can request an invitation at the link
+            <p>Since this Echelon mode is not the current focus for the Alpha, it has not yet been directly worked on.
+                So far, the only progress that it has seen is features and functionality that is shared with the Jukebox
+                mode. These functionalities include the group page, invites, adding music, etc.</p>
+            <p>DJ mode is not currently available, however, you can try out the Jukebox now in the current closed Alpha.
+                You can request an invitation at the link
                 below:</p>
-            <a href="https://goo.gl/forms/nmp1AK2jEdXwh4ez2" class="btn btn-default">Request Invitation</a>
+            <a href="invite.html" class="btn btn-default">Request Invitation</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <div class="image-caption-group">
-                <img class="fit-image" src="assets/images/echelongroup.png"/>
-                <p>The current look of the queue in Jukebox mode.</p>
+                <img class="fit-image" src="assets/images/dj-mockup.png" alt="A wireframe mockup of the DJ mode"/>
+                <p>A wireframe mockup of the DJ mode</p>
             </div>
         </div>
     </div>
 </div>
+
+include "includes/footer.html"
+
 <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Echelon: Jukebox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
+<body>
+include "includes/navbar.html"
+<div class="container">
+    <div class="page-header row flex">
+        <div class="col-md-1 flex vertical center">
+            <img class="fit-image" src="assets/images/ic_launcher.png" alt="echelon logo"/>
+        </div>
+        <div class="col-md-11">
+            <h1>Echelon: Invite Request Form</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-sm-12">
+            <h2>Closed Alpha Invite Request</h2>
+            <p>This form is not currently functional, it only servers as a temporary placeholder. If you would like to
+                sign up for real, <a href="https://goo.gl/forms/nmp1AK2jEdXwh4ez2">please click here.</a></p>
+            <form>
+                <fieldset>
+                    <legend>Who you are:</legend>
+                    <div class="group">
+                        <label for="name">Name</label>
+                        <input type="text" class="full control" id="name" placeholder="Name">
+                    </div>
+                    <div class="group">
+                        <label for="email">Email Associated with Google Account</label>
+                        <input type="email" class="full control" id="email" placeholder="Email">
+                    </div>
+                    <div class="group">
+                        <label for="use">How do you want to use Echelon?</label><br/>
+                        <textarea rows="3" cols="40" id="use"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>You're device:</legend>
+                    <div class="group">
+                        <label for="device">Primary Device</label><br/>
+                        <input type="radio" name="device" value="android" id="device"> Android<br>
+                        <input type="radio" name="device" value="ios"> iOS<br>
+                        <input type="radio" name="device" value="web"> Web
+                    </div>
+                    <div class="group">
+                        <label for="color">You're favorite color</label><br/>
+                        <input type="color" name="favcolor" id="color">
+                    </div>
+                </fieldset>
+                <div class="group">
+                    <input type="checkbox" name="newsletter" value="newsletter" checked> Receive email newsletters
+                </div>
+                <input type="submit" class="btn btn-default" value="Submit">
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="image-caption-group">
+                <img class="fit-image" src="assets/images/echelon-browse.png"
+                     alt="Browsing Spotify's current recommended playlists"/>
+                <p>Browsing Spotify's current recommended playlists</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+include "includes/footer.html"
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

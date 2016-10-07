@@ -3,6 +3,7 @@
 <head>
     <title>Echelon: Jukebox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
@@ -12,7 +13,7 @@ include "includes/navbar.html"
 <div class="container">
     <div class="page-header row flex">
         <div class="col-md-1 flex vertical center">
-            <img class="fit-image" src="assets/images/ic_launcher.png"/>
+            <img class="fit-image" src="assets/images/ic_launcher.png" alt="echelon logo"/>
         </div>
         <div class="col-md-11">
             <h1>Echelon: Jukebox</h1>
@@ -40,16 +41,19 @@ include "includes/navbar.html"
                 public beta release.</p>
             <p>To try out the Jukebox now in the current closed Alpha, you can request an invitation at the link
                 below:</p>
-            <a href="https://goo.gl/forms/nmp1AK2jEdXwh4ez2" class="btn btn-default">Request Invitation</a>
+            <a href="invite.html" class="btn btn-default">Request Invitation</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <div class="image-caption-group">
-                <img class="fit-image" src="assets/images/echelongroup.png"/>
-                <p>The current look of the queue in Jukebox mode</p>
+                <img class="fit-image" src="assets/images/echelon-add-song.gif" alt="What it looks like to add a song to the queue"/>
+                <p>What it looks like to add a song to the queue</p>
             </div>
         </div>
     </div>
 </div>
+
+include "includes/footer.html"
+
 <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

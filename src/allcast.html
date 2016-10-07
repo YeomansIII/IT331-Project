@@ -3,6 +3,7 @@
 <head>
     <title>Echelon: AllCast</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
@@ -12,7 +13,7 @@ include "includes/navbar.html"
 <div class="container">
     <div class="page-header row flex">
         <div class="col-md-1 flex vertical center">
-            <img class="fit-image" src="assets/images/ic_launcher.png"/>
+            <img class="fit-image" src="assets/images/ic_launcher.png" alt="echelon logo"/>
         </div>
         <div class="col-md-11">
             <h1>Echelon: AllCast</h1>
@@ -20,36 +21,38 @@ include "includes/navbar.html"
         </div>
     </div>
     <div class="progress project">
-        <div class="progress-bar" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"
-             style="width: 15%;">
-            15%
+        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+             style="width: 80%;">
+            80%
         </div>
     </div>
     <div class="row">
         <div class="col-md-8 col-sm-12">
             <h2>Purpose</h2>
-            <p>The Jukebox is Echelon's primary feature. The initial idea for the app was to create a way for groups of
-                friends or venues to let everyone queue up music on one device.</p>
-            <p>When songs are in the queue, listeners can can upvote songs they want to listen to, bringing those songs
-                to the top of the queue. The songs closer to the top of the queue will be played sooner than those on
-                the bottom, as the player plays songs from the top of the queue.</p>
+            <p>AllCast is a very similar mode to the Jukebox, except with one key difference, all users will be able to
+                play on their own devices. This mode is excellent for remote group music sessions. AllCast is great to
+                take a jog or chill at home while listening to a list of tracks curated live by you and your
+                friends.</p>
             <h2>Progress</h2>
-            <p>The Jukebox is the only mode being actively worked on at the moment, as it is the primary feature of the
-                app. The Jukebox is functional and users can join the group, add songs, vote, and the leader can play
-                the queue. The functionality and design of the Jukebox is currently being refined and prepped for the
-                public beta release.</p>
+            <p>Since AllCast is essentially the same functionality of Jukebox, it's progress is very dependent on the
+                progress of Jukebox. There are only minor changes and adjustments to make in order to make AllCast
+                functional.</p>
             <p>To try out the Jukebox now in the current closed Alpha, you can request an invitation at the link
                 below:</p>
-            <a href="https://goo.gl/forms/nmp1AK2jEdXwh4ez2" class="btn btn-default">Request Invitation</a>
+            <a href="invite.html" class="btn btn-default">Request Invitation</a>
         </div>
         <div class="col-md-4 col-sm-12">
             <div class="image-caption-group">
-                <img class="fit-image" src="assets/images/echelongroup.png"/>
-                <p>The current look of the queue in Jukebox mode.</p>
+                <img class="fit-image" src="assets/images/echelongroup.png"
+                     alt="The queue screen will be identical to the Jukebox queue screen"/>
+                <p>The queue screen will be identical to the Jukebox queue screen</p>
             </div>
         </div>
     </div>
 </div>
+
+include "includes/footer.html"
+
 <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
