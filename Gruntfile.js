@@ -24,6 +24,17 @@ module.exports = function (grunt) {
                         silent: true
                     }
                 }]
+            },
+            scripts: {
+                files: [{
+                    src: '**/*.js',
+                    dest: 'dist',
+                    flatten: false,
+                    cwd: 'src',
+                    options: {
+                        silent: true
+                    }
+                }]
             }
         },
         imagemin: {
