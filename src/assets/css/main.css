@@ -117,6 +117,14 @@ footer {
 footer .disclaimer {
     color: #555;
 }
+
+
+/* COMMON */
+.hide {
+    display:none;
+}
+
+
 /* media query */
 @media (max-width: 768px) {
     .page-header {

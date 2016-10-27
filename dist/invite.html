@@ -29,8 +29,28 @@
                 <li><a href="allcast.html">AllCast</a></li>
                 <li><a href="invite.html">Get Invite</a></li>
             </ul>
+            <form id="greetingForm" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="First Name"
+                           title="Get a personalized greeting!">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><span id="firstName"></span></li>
+            </ul>
         </div>
     </div>
+    <script>
+        var form = document.getElementById('greetingForm'),
+                firstNameSpan = document.getElementById('firstName');
+        var firstName = localStorage.getItem('firstName');
+        console.log(firstName);
+        if(firstName != null) {
+            firstNameSpan.textContent = firstName;
+            form.className = 'hide';
+        }
+    </script>
 </nav>
 <div class="container">
     <div class="page-header row flex">
