@@ -18,7 +18,7 @@
                 <li><a href="allcast.html">AllCast</a></li>
                 <li><a href="invite.html">Get Invite</a></li>
             </ul>
-            <form id="greetingForm" class="navbar-form navbar-right">
+            <form id="greetingForm" class="navbar-form navbar-right hide">
                 <div class="form-group">
                     <input type="text" id="firstNameInput" class="form-control" placeholder="First Name"
                            title="Get a personalized greeting!">
@@ -27,17 +27,16 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="dropdown-toggle" id="dropdownMenu1"
+                    <!-- Bootstrap Dropdown -->
+                    <a class="dropdown-toggle" id="welcomeNav"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <span id="firstName"></span>
+                        Welcome, <span id="firstName"></span>. Today is <span id="todays-date"></span>.
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul class="dropdown-menu" aria-labelledby="welcomeNav">
                         <li><a href="#" id="resetName">Reset</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
-    <script>
-    </script>
 </nav>

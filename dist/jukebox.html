@@ -29,7 +29,7 @@
                 <li><a href="allcast.html">AllCast</a></li>
                 <li><a href="invite.html">Get Invite</a></li>
             </ul>
-            <form id="greetingForm" class="navbar-form navbar-right">
+            <form id="greetingForm" class="navbar-form navbar-right hide">
                 <div class="form-group">
                     <input type="text" id="firstNameInput" class="form-control" placeholder="First Name"
                            title="Get a personalized greeting!">
@@ -38,19 +38,18 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="dropdown-toggle" id="dropdownMenu1"
+                    <!-- Bootstrap Dropdown -->
+                    <a class="dropdown-toggle" id="welcomeNav"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        <span id="firstName"></span>
+                        Welcome, <span id="firstName"></span>. Today is <span id="todays-date"></span>.
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <ul class="dropdown-menu" aria-labelledby="welcomeNav">
                         <li><a href="#" id="resetName">Reset</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
-    <script>
-    </script>
 </nav>
 <div class="container">
     <div class="page-header row flex">
@@ -97,11 +96,12 @@
 <footer>
     <p>
         &copy; 2016 Jason Yeomans &bull; <a href="https://github.com/YeomansIII/IT331-Project">Source Code</a> &bull; <a
-            href="assets/css/main.css">Webpage Styles</a>
+            href="assets/css/main.css">Webpage Styles</a> &bull; Last Modified: <span id="last-modified"></span>
         <span class="right disclaimer">this website is developed as an educational project</span>
     </p>
 </footer>
 
+<script src="assets/scripts/main.js"></script>
 <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
