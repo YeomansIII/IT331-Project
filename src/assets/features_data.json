@@ -1,0 +1,86 @@
+{
+  "features": {
+    "feature": [
+      {
+        "name": "Login/Authentication",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Navigation drawer",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Home screen",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Account Screen",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Player service",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Track queue",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Now playing",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Participants drawer",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Track detail bottom sheet",
+        "progress": "70%",
+        "complete": "No"
+      },
+      {
+        "name": "User detail bottom sheet",
+        "progress": "60%",
+        "complete": "No"
+      },
+      {
+        "name": "Add song from library",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "Add song from browse",
+        "progress": "100%",
+        "complete": "Yes"
+      },
+      {
+        "name": "DJ Mode",
+        "progress": "15%",
+        "complete": "No"
+      },
+      {
+        "name": "AllCast Mode",
+        "progress": "80%",
+        "complete": "No"
+      },
+      {
+        "name": "Invite to group",
+        "progress": "80%",
+        "complete": "No"
+      },
+      {
+        "name": "Friends List",
+        "progress": "20%",
+        "complete": "No"
+      }
+    ]
+  }
+}

@@ -35,6 +35,17 @@ module.exports = function (grunt) {
                         silent: true
                     }
                 }]
+            },
+            data: {
+                files: [{
+                    src: '**/*.json',
+                    dest: 'dist',
+                    flatten: false,
+                    cwd: 'src',
+                    options: {
+                        silent: true
+                    }
+                }]
             }
         },
         imagemin: {
@@ -59,6 +70,10 @@ module.exports = function (grunt) {
             scripts: {
                 files: ['src/**/*.js'],
                 tasks: ['includes:scripts']
+            },
+            data: {
+                files: ['src/**/*.json'],
+                tasks: ['includes:data']
             },
             images: {
                 files: ['src/**/*.{png,jpg,gif}'],
