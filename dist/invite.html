@@ -80,6 +80,13 @@
                         <label for="use">How do you want to use Echelon?</label><br/>
                         <textarea rows="3" cols="40" id="use"></textarea>
                     </div>
+                    <div class="group">
+                        <label for="use">Do you have any ideas for Echelon?</label><br/>
+                        <div id="ideaFields">
+                            <input type="text"/>
+                        </div>
+                        <button id="addIdeaField" type="button">Add idea field</button>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>You're device:</legend>
@@ -90,7 +97,7 @@
                         <input type="radio" name="device" value="web"> Web
                     </div>
                     <div class="group">
-                        <label for="color">You're favorite color</label><br/>
+                        <label for="color" id="colorLabel">You're favorite color</label><br/>
                         <input type="color" name="favcolor" id="color">
                     </div>
                 </fieldset>

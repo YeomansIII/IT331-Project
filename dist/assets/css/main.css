@@ -124,6 +124,10 @@ footer .disclaimer {
     display:none;
 }
 
+/*#featuresWrapper {*/
+    /*overflow: hidden;*/
+/*}*/
+
 
 /* media query */
 @media (max-width: 768px) {

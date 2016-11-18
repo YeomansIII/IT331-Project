@@ -12,7 +12,8 @@ This website can be viewed on the public internet at the following URL:
   * This is the homepage. This page includes an introduction to the application and the website.
   The page also includes a GIF image (created by me), as well as a feature table.
   * *Changes Since Project 2:* I have redone the features table to now use a JSON dataset
-  and Spry Data, instead of being static data.
+  and Spry Data, instead of being static data. The feature table now also has mouseover and mouseout hover effects.
+  The homepage header now animates and slides into the page from the left on page load.
 * jukebox.html
   * This page outlines the details and progress of the Jukebox mode feature of Echelon.
   This page also contains a GIF image (created by me).
@@ -25,11 +26,12 @@ This website can be viewed on the public internet at the following URL:
 * invite.html
   * This page contains a form allowing the user to sign up for the Echelon closed Alpha.
   Since this form does not currently function outside of the UI, I have linked the user to my real closed Alpha sign up form.
+  * *Changes since Project 2:* The invite page now has an Echelon idea field.
+  A button can be pressed to add more idea fields to the form.
+  This satisfies the Dynamic Content requirement.
 * features_data.json
   * This file (or "page") is located in the assets folder. It is a new file that stores the JSON
   data for the Spry Data requirement of this project. This would be my sixth "page" for the project.
-
-The navigation bar and footer has been changed on each page.  The invite page now has a random image.  A link on the index page has been converted to a button.
 
 #### Project Requirements
 1. 6 Minimum Pages (including json data)
@@ -40,13 +42,22 @@ There is a simple and clear navigation bar on top of every page that links to ea
 The `main.js` file contains many comments to explain each variable declaration and each major structure.
 I have written the code with readable variable names and there is ample spacing and easy readability.
 3. Modifying Page Content Dynamically  
-I have 
+This is implemented on the 'Request Invite' page. A user can submit ideas they have for the app.
+If the user wants to add more than one idea, they can press the 'Add idea field' button.
+When the button is pressed a new text input field and 'remove' button is added.
+If they press the remove button, that particular idea field is removed.
 4. Modifying Page Styles Dynamically  
-I have
+This requirement was implemented rather simply. On the 'Request Invite' page a user can select their favorite color.
+When they pick a color, it changes the label of the color picker field to that color.
+This works every time they pick a new color!
 5. Rollover Effect  
-I have sdfad
+This requirement is implemented on the home page.
+The feature table now has a hover effect on each row.
+When the user hovers a row, the background color changes to a darker color and the text turns white.
+When a row is moused out, it returns to normal.
 6. Scripted Animation  
-This is
+I added the scripted animation to the homepage. The homepage header now slides in from the left on page load.
+This works by starting off with a css margin-left of -800px. The Javascript interval then adds 5px every 10ms until the margin-left is 0.
 7. XML or JSON File & Spry Data  
 This requirement is satisfied by the redone features table on the home page.
 I have converted the once static data into a JSON data format.

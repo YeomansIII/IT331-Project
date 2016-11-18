@@ -40,6 +40,14 @@ function featureBugFormClick() {
     var popupForm = window.open("https://goo.gl/forms/ITBliMvD8EuhtWnO2", "Echelon Feature/Bug Form", "width=450,height=600");
 }
 
+function rowMouseOver() {
+    this.setAttribute('style', 'background-color:#57387B;color:white;');
+}
+
+function rowMouseOut() {
+    this.setAttribute('style', '');
+}
+
 function start() {
     ////// NAVBAR JAVASCRIPT (Store name in localStorage) //////
     form = document.getElementById('greetingForm'); // get greeting form
@@ -71,6 +79,26 @@ function start() {
     var lastModifiedSpan = document.getElementById('last-modified');
     lastModifiedSpan.textContent = document.lastModified;
     ////// END LAST MODIFIED //////
+
+    setTimeout(function () { // use timeout to wait for sprydata to load
+        var featureRows = document.querySelectorAll('.featureRow');
+        console.log(featureRows);
+        for (var i = 0; i < featureRows.length; i++) {
+            featureRows[i].addEventListener('mouseover', rowMouseOver, false);
+            featureRows[i].addEventListener('mouseout', rowMouseOut, false);
+        }
+    }, 2000);
+
+    var homepageHeader = document.getElementById('homepageHeader'); // get the homepage header
+    var marginLeft = -800; // set initial margin-left
+    var animInterval = setInterval(function () { // create interval for the animation
+        if (marginLeft === 0) {
+            clearInterval(animInterval); // clear interval once we get to 0
+        } else {
+            homepageHeader.setAttribute('style', 'margin-left:' + marginLeft+'px'); // set the margin left
+            marginLeft += 5; // move to the right
+        }
+    }, 10); // every 10ms
 }
 
 window.addEventListener('load', start, false);

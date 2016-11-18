@@ -18,7 +18,7 @@
 <body>
 include "includes/navbar.html"
 <div class="container">
-    <div class="page-header row flex">
+    <div id="homepageHeader" class="page-header row flex" style="margin-left: -800px">
         <div class="col-md-1 flex vertical center">
             <img class="fit-image" src="assets/images/ic_launcher.png" alt="echelon logo"/>
         </div>
@@ -69,19 +69,22 @@ include "includes/navbar.html"
     <div class="row">
         <div class="col-md-12">
             <h3>Comprehensive Feature Progress List</h3>
-            <div spry:region="spryFeatures">
-                <table id="features">
-                    <tr>
-                        <th>Feature</th>
-                        <th>Progress</th>
-                        <th>Complete</th>
-                    </tr>
-                    <tr spry:repeat="spryFeatures" spry:hover="rowHover" spry:setrow="spryFeatures">
-                        <td>{name}</td>
-                        <td>{progress}</td>
-                        <td>{complete}</td>
-                    </tr>
-                </table>
+            <div id="featuresWrapper">
+                <div spry:region="spryFeatures">
+                    <table id="features">
+                        <tr>
+                            <th>Feature</th>
+                            <th>Progress</th>
+                            <th>Complete</th>
+                        </tr>
+                        <tr spry:repeat="spryFeatures" spry:hover="rowHover" spry:setrow="spryFeatures"
+                            class="featureRow">
+                            <td>{name}</td>
+                            <td>{progress}</td>
+                            <td>{complete}</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
