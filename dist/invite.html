@@ -28,6 +28,7 @@
                 <li><a href="dj.html">DJ</a></li>
                 <li><a href="allcast.html">AllCast</a></li>
                 <li><a href="invite.html">Get Invite</a></li>
+                <li><a href="project.html">Project Info</a></li>
             </ul>
             <form id="greetingForm" class="navbar-form navbar-right hide">
                 <div class="form-group">
@@ -69,21 +70,21 @@
                 <fieldset>
                     <legend>Who you are:</legend>
                     <div class="group">
-                        <label for="name">Name</label>
-                        <input type="text" class="full control" id="name" placeholder="Name">
+                        <label for="name">Name</label>&nbsp;min 2 characters
+                        <input type="text" class="full control" id="name" placeholder="Name" data-validation="length alphanumeric" data-validation-length="min2">
                     </div>
                     <div class="group">
                         <label for="email">Email Associated with Google Account</label>
-                        <input type="email" class="full control" id="email" placeholder="Email">
+                        <input type="email" class="full control" id="email" placeholder="Email" data-validation="email">
                     </div>
                     <div class="group">
-                        <label for="use">How do you want to use Echelon?</label><br/>
-                        <textarea rows="3" cols="40" id="use"></textarea>
+                        <label for="use">How do you want to use Echelon?</label>&nbsp;max 200 characters<br/>
+                        <textarea rows="3" cols="40" id="use" data-validation="length alphanumeric" data-validation-length="max200"></textarea>
                     </div>
                     <div class="group">
                         <label for="use">Do you have any ideas for Echelon?</label><br/>
                         <div id="ideaFields">
-                            <input type="text"/>
+                            <input type="text" title="Add more fields to give more ideas, remove fields you don't need."/>
                         </div>
                         <button id="addIdeaField" type="button">Add idea field</button>
                     </div>
@@ -133,5 +134,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.5.1/showdown.min.js"></script>
 </body>
 </html>

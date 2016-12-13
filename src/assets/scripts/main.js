@@ -48,6 +48,24 @@ function rowMouseOut() {
     this.setAttribute('style', '');
 }
 
+function manualAnimate() {
+    var homepageHeader = document.getElementById('homepageHeader'); // get the homepage header
+    var marginLeft = -800; // set initial margin-left
+    var animInterval = setInterval(function () { // create interval for the animation
+        if (marginLeft === 0) {
+            clearInterval(animInterval); // clear interval once we get to 0
+        } else {
+            homepageHeader.setAttribute('style', 'margin-left:' + marginLeft+'px'); // set the margin left
+            marginLeft += 5; // move to the right
+        }
+    }, 10); // every 10ms
+}
+
+function jqueryAnimate() {
+    var $header = $('#homepageHeader');
+    $header.animate({'margin-left': 0}, 600);
+}
+
 function start() {
     ////// NAVBAR JAVASCRIPT (Store name in localStorage) //////
     form = document.getElementById('greetingForm'); // get greeting form
@@ -89,16 +107,8 @@ function start() {
         }
     }, 2000);
 
-    var homepageHeader = document.getElementById('homepageHeader'); // get the homepage header
-    var marginLeft = -800; // set initial margin-left
-    var animInterval = setInterval(function () { // create interval for the animation
-        if (marginLeft === 0) {
-            clearInterval(animInterval); // clear interval once we get to 0
-        } else {
-            homepageHeader.setAttribute('style', 'margin-left:' + marginLeft+'px'); // set the margin left
-            marginLeft += 5; // move to the right
-        }
-    }, 10); // every 10ms
+    //manualAnimate(); // Replacing with jquery animation for Project 4
+    jqueryAnimate();
 }
 
 window.addEventListener('load', start, false);

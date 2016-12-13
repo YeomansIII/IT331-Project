@@ -36,5 +36,9 @@ function start() {
     ideaDiv = document.getElementById('ideaFields');
     document.getElementById('addIdeaField').addEventListener('click', addIdeaField, false);
     document.getElementById('color').addEventListener('input', colorFieldChanged, false);
+
+    $(document).tooltip(); // Tooltip for idea field
+
+    $.validate();
 }
 window.addEventListener('load', start, false);

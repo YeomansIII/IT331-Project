@@ -28,21 +28,21 @@ include "includes/navbar.html"
                 <fieldset>
                     <legend>Who you are:</legend>
                     <div class="group">
-                        <label for="name">Name</label>
-                        <input type="text" class="full control" id="name" placeholder="Name">
+                        <label for="name">Name</label>&nbsp;min 2 characters
+                        <input type="text" class="full control" id="name" placeholder="Name" data-validation="length alphanumeric" data-validation-length="min2">
                     </div>
                     <div class="group">
                         <label for="email">Email Associated with Google Account</label>
-                        <input type="email" class="full control" id="email" placeholder="Email">
+                        <input type="email" class="full control" id="email" placeholder="Email" data-validation="email">
                     </div>
                     <div class="group">
-                        <label for="use">How do you want to use Echelon?</label><br/>
-                        <textarea rows="3" cols="40" id="use"></textarea>
+                        <label for="use">How do you want to use Echelon?</label>&nbsp;max 200 characters<br/>
+                        <textarea rows="3" cols="40" id="use" data-validation="length alphanumeric" data-validation-length="max200"></textarea>
                     </div>
                     <div class="group">
                         <label for="use">Do you have any ideas for Echelon?</label><br/>
                         <div id="ideaFields">
-                            <input type="text"/>
+                            <input type="text" title="Add more fields to give more ideas, remove fields you don't need."/>
                         </div>
                         <button id="addIdeaField" type="button">Add idea field</button>
                     </div>
